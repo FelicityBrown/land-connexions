@@ -1,8 +1,9 @@
 module.exports = {
   fontFamily: {
-    sans: ["Lato", "sans-serif"],
+    sans: ["Lato", "sans-serif", "Raleway"],
   },
   fontSize: {
+    xxs: "10px",
     xs: "12px",
     sm: "14px",
     base: "16px",

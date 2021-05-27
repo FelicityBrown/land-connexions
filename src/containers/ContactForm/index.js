@@ -53,7 +53,16 @@ function ContactForm() {
           className="text-blue-600 mb-2 p-1 border border-grey-200 rounded "
         ></textarea>
       </form>
-      <Button label="Sumbit" onClick={() => alert("clicked")} />
+      <Button
+        label="Sumbit"
+        onClick={() => alert("clicked")}
+        className="mb-6"
+      />
+      <div className="text-blue-300">
+        <p>John Moore</p>
+        <p>07544 715013</p>
+        <p>john@landconnexions.co.uk</p>
+      </div>
     </div>
   );
 }

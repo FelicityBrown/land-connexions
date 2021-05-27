@@ -6,6 +6,7 @@ module.exports = {
     blue: {
       300: "#6F96A6",
       600: "#102D40",
+      link: "#001bfa",
     },
 
     green: {

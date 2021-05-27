@@ -17,9 +17,9 @@ function Tabs(props) {
             <li className="mb-0" key={index}>
               <Wrapper
                 className={classnames(
-                  "block mr-4 text-md font-bold cursor-pointer text-white",
-                  !item.selected && "hover:text-grey-300",
-                  item.selected && "text-green-300",
+                  "block ml-6 text-md font-bold text-white",
+                  !item.selected && "hover:text-grey-300 cursor-pointer",
+                  item.selected && "text-green-300 cursor-default",
                   // Additional classes from props
                   props.className
                 )}
