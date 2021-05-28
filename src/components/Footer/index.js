@@ -1,5 +1,8 @@
 import React from "react";
 
+// 3rd Party
+import { Link } from "react-router-dom";
+
 // Components
 import logo from "../../assets/logo.svg";
 
@@ -12,7 +15,9 @@ function Footer(props) {
         className="md:h-20 h-16 md:block bg-blue-600"
       />
       <div className="self-end">© Copyright by Land Connexions</div>
-      <div className="self-end">Contact Us</div>
+      <Link to="/contact" className="self-end">
+        <div>Contact Us</div>
+      </Link>
     </div>
   );
 }

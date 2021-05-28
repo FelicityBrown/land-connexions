@@ -7,13 +7,19 @@ import { Button } from "../../components/Button";
 
 function ContactForm() {
   return (
-    <div className="text-grey-700 p-4">
-      <h2 className="uppercase pb-4 text-lg">Contact Us</h2>
-      <p className="mb-4 text-blue-300">
-        If you have any questions or would like to discuss your own situation,
-        we would be delighted to talk to you.
-      </p>
-      <form className="flex flex-col">
+    <div className="text-grey-700 max-w-screen-md p-8 text-lg">
+      <h2 className="uppercase pb-4">Contact Us</h2>
+      <div className="mb-8 text-blue-300 font-semibold">
+        <p className="mb-4">
+          If you have any questions or would like to discuss your own situation,
+          we would be delighted to talk to you.
+        </p>
+        <p>
+          Please fill out our contact form below and we will get back in touch
+          with you shortly.
+        </p>
+      </div>
+      <form className="flex flex-col text-blue-600">
         <label for="name" className="mb-2">
           Name:
         </label>
@@ -21,7 +27,7 @@ function ContactForm() {
           type="text"
           name="name"
           id="name"
-          className="text-blue-600 mb-2 p-1 border border-grey-200 rounded"
+          className="text-blue-600 mb-4 p-1 border border-grey-200 rounded"
         />
         <label for="emailAddress" className="mb-2">
           Email Address:
@@ -30,7 +36,7 @@ function ContactForm() {
           type="email"
           name="emailAddress"
           id="emailAddress"
-          className="text-blue-600 mb-2 p-1 border border-grey-200 rounded"
+          className="text-blue-600 mb-4 p-1 border border-grey-200 rounded"
         />
         <label for="phoneNumber" className="mb-2">
           Phone Number:
@@ -39,7 +45,7 @@ function ContactForm() {
           type="number"
           name="phoneNumber"
           id="phoneNumber"
-          className="text-blue-600 mb-2 p-1 border border-grey-200 rounded"
+          className="text-blue-600 mb-4 p-1 border border-grey-200 rounded"
         />
         <label for="message" className="mb-2">
           Type your message here...
@@ -50,18 +56,33 @@ function ContactForm() {
           cols="60"
           name="text"
           placeholder="Enter your message here..."
-          className="text-blue-600 mb-2 p-1 border border-grey-200 rounded "
+          className="text-blue-600 mb-6 md:mb-8 p-1 border border-grey-200 rounded form-textarea mt-1 block w-full "
         ></textarea>
       </form>
       <Button
         label="Sumbit"
         onClick={() => alert("clicked")}
-        className="mb-6"
+        className="mb-6 md:mb-8"
+        size="large"
       />
-      <div className="text-blue-300">
-        <p>John Moore</p>
-        <p>07544 715013</p>
-        <p>john@landconnexions.co.uk</p>
+      <div className="text-blue-300 font-semibold border-t-2 border-grey-50">
+        <p className="mt-6 mb:mt-8 pb-4">Alternatively you can contact: </p>
+        <p className="pb-2">John Moore</p>
+        <div className="flex flex-row pb-2">
+          <p>Mobile: </p>
+          <a className="text-blue-link ml-2" href="tel:+447544715013">
+            07544 715013
+          </a>
+        </div>
+        <div className="flex flex-row">
+          <p>Email: </p>
+          <a
+            className="text-blue-link ml-2"
+            href="mailto:john@landconnexions.co.uk"
+          >
+            john@landconnexions.co.uk
+          </a>
+        </div>
       </div>
     </div>
   );

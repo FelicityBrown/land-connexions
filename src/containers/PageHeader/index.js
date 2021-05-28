@@ -27,8 +27,13 @@ function PageHeader(props) {
               {
                 label: "Home",
                 selected: tab === "Home",
+                url: "/",
               },
-              { label: "Contact Us", selected: tab === "Contact Us" },
+              {
+                label: "Contact Us",
+                selected: tab === "Contact Us",
+                url: "/contact",
+              },
             ]}
             onTab={(tab) => setTab(tab.label)}
           />

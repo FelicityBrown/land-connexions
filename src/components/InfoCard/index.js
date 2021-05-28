@@ -7,33 +7,28 @@ function InfoCard(props) {
     <span
       id={props.id}
       className={classnames(
-        "sm:flex sm:flex-row sm:justify-between flex flex-col items-center text-grey-700 py-8 px-6 sm:px-8 mx-8 border-solid",
+        "flex flex-col md:flex-row justify-between  items-center text-blue-600 p-4 md:p-8  mb-4 md:mx-8 border-solid",
         props.photoPosition === "left" && "bg-grey-50 rounded"
       )}
     >
       {props.photoPosition === "left" && (
-        <div className="sm:pr-8 sm:pb-0 sm:flex-1 hidden md:block">
+        <div className="pr-8 pb-0 sm:flex-1 hidden md:block">
           <img src={props.image} alt={props.alt} className="rounded" />
         </div>
       )}
       <div className="sm:flex-1">
-        <h2 className="uppercase font-bold text-lg pb-8">{props.heading}</h2>
-        <div
-          className={classnames(
-            "md:text-left pb-8"
-            // props.photoPosition === `right` && "pb-8"
-          )}
-        >
+        <h2 className="uppercase font-bold text-lg pb-6">{props.heading}</h2>
+        <div className={classnames("md:text-left pb-4 md:pb-0")}>
           {props.children}
         </div>
       </div>
       {props.photoPosition === "right" && (
-        <div className="sm:pl-8 sm:flex-1">
+        <div className="md:pl-8 md:flex-1">
           <img src={props.image} alt={props.alt} className="rounded" />
         </div>
       )}
       {props.photoPosition === "left" && (
-        <div className="sm:pl-8 sm:flex-1 block md:hidden">
+        <div className="md:pl-8 md:flex-1 block md:hidden">
           <img src={props.image} alt={props.alt} className="rounded" />
         </div>
       )}
