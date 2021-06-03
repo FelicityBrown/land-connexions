@@ -1,9 +1,4 @@
 import React from "react";
-// import PropTypes from "prop-types";
-// import classnames from "classnames";
-
-// Components
-import { Button } from "../../components/Button";
 
 function ContactForm() {
   return (
@@ -19,11 +14,16 @@ function ContactForm() {
           with you shortly.
         </p>
       </div>
-      <form className="flex flex-col text-blue-600">
+      <form
+        className="flex flex-col text-blue-600"
+        method="post"
+        action="http://localhost:3001"
+      >
         <label for="name" className="mb-2">
           Name:
         </label>
         <input
+          required
           type="text"
           name="name"
           id="name"
@@ -33,6 +33,7 @@ function ContactForm() {
           Email Address:
         </label>
         <input
+          required
           type="email"
           name="emailAddress"
           id="emailAddress"
@@ -51,6 +52,7 @@ function ContactForm() {
           Type your message here...
         </label>
         <textarea
+          required
           id="message"
           rows="5"
           cols="60"
@@ -58,13 +60,19 @@ function ContactForm() {
           placeholder="Enter your message here..."
           className="text-blue-600 mb-6 md:mb-8 p-1 border border-grey-200 rounded form-textarea mt-1 block w-full "
         ></textarea>
+        <div className="flex justify-center">
+          <input
+            type="submit"
+            className="cursor:pointer uppercase border border-green-400 rounded-full text-white bg-green-400 py-2 px-8 text-xl mb-6 md:mb-8"
+          />
+        </div>
       </form>
-      <Button
+      {/* <Button
         label="Sumbit"
         onClick={() => alert("clicked")}
         className="mb-6 md:mb-8"
         size="large"
-      />
+      /> */}
       <div className="text-blue-300 font-semibold border-t-2 border-grey-50">
         <p className="mt-6 mb:mt-8 pb-4">Alternatively you can contact: </p>
         <p className="pb-2">John Moore</p>

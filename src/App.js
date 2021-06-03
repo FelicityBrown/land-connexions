@@ -12,6 +12,7 @@ import {
 // Components
 import { Home } from "./pages/Home";
 import { Contact } from "./pages/Contact";
+import { ThankYou } from "./pages/ThankYou";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -29,6 +30,7 @@ function App() {
       <ScrollToTop />
       <Switch>
         <Route path="/contact" component={Contact} />
+        <Route path="/thankyou" component={ThankYou} />
         <Route path="/" component={Home} />
       </Switch>
     </Router>

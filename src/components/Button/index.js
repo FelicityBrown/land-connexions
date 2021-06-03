@@ -6,13 +6,13 @@ function Button(props) {
   return (
     <button
       className={classnames(
-        "uppercase border border-green-400 rounded-full text-white bg-green-400 py-1 px-3 cursor:pointer focus:outline-none",
+        "uppercase border border-green-400 rounded-full text-white bg-green-400 py-1 px-4 cursor:pointer focus:outline-none",
         props.disabled &&
           "cursor-not-allowed border-grey-150 rounded-full text-white bg-grey-150",
         props.className,
         props.size === "small" && "text-xxs",
         props.size === "medium" && "text-sm",
-        props.size === "large" && "text-xl"
+        props.size === "large" && "text-xl py-2 px-8"
       )}
       disabled={props.disabled}
       onClick={props.onClick}
