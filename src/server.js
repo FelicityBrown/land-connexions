@@ -81,8 +81,10 @@ http
           plainText,
           htmlText
         );
-        res.writeHead(200, { "Content-Type": "text/html" });
-        res.end("Thank you");
+        res.writeHead(302, {
+          location: "/thankyou",
+        });
+        res.end("");
       });
     }
   })

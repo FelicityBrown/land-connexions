@@ -17,7 +17,7 @@ function ContactForm() {
       <form
         className="flex flex-col text-blue-600"
         method="post"
-        action="http://localhost:3001"
+        action="/submit"
       >
         <label for="name" className="mb-2">
           Name:

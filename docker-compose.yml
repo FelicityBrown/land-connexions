@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  land-connexions:
+    container_name: land-connexions
+    build: .
+    ports:
+      - '8000:80'
