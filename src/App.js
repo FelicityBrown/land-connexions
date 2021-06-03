@@ -1,10 +1,11 @@
-import React from "react";
+import { useEffect } from "react";
 
 // import { BrowserRouter as Router } from "react-router-dom";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
+  useLocation,
   // Redirect,
 } from "react-router-dom";
 
@@ -12,25 +13,24 @@ import {
 import { Home } from "./pages/Home";
 import { Contact } from "./pages/Contact";
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Switch>
         <Route path="/contact" component={Contact} />
         <Route path="/" component={Home} />
       </Switch>
-      {/* <main>
-        <nav>
-          <ul>
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="/contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </main> */}
     </Router>
   );
 }
