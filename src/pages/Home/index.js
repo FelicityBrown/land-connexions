@@ -29,7 +29,7 @@ import planningwork from "../../assets/planningwork.jpg";
 
 function Home() {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col justify-between">
       <PageHeader />
       <div className="p-8 md:mx-12 md:mt-4 text-blue-300 items-center flex flex-col text-left text-lg">
         <div className="max-w-screen-xl md:pl-72 md:pr-8 px-2">
