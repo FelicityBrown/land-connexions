@@ -80,7 +80,7 @@ function Home() {
               </a>
             </li>
             <li className="mb-2">
-              <a href="#optionsPromotionAgreement">
+              <a href="#optionPromotionAgreement">
                 Option & Promotion Agreements
               </a>
             </li>
@@ -115,7 +115,7 @@ function Home() {
           heading="Planning Advice"
           photoPosition="left"
           image={housesSunset}
-          alt="By Tom Thain on Unsplash"
+          alt="Photo of newly built houses during sunset"
         >
           <>
             <p className="pb-4">
@@ -137,6 +137,7 @@ function Home() {
           heading="Sales Negotiations and Management"
           photoPosition="right"
           image={planning}
+          alt="Two colleagues with laptops and paperwork, working collaboratively. Paper and laptop screens are blurred so no data or stats are visible"
         >
           <p>
             We will use our experience to negotiate with prospective purchasers
@@ -148,6 +149,7 @@ function Home() {
           heading="Option and Promotion Agreements"
           photoPosition="left"
           image={paperwork}
+          alt="Colleague doing paperwork, paper is blurred so cannot see any stats, data or writing"
         >
           <>
             <p className="pb-4">
@@ -165,9 +167,10 @@ function Home() {
           </>
         </InfoCard>
         <InfoCard
-          heading="Options Agreement"
+          heading="Option Agreement"
           photoPosition="right"
           image={builder}
+          alt="Builder measuring the distance between two beams"
         >
           <>
             This is where the land remains in the ownership of the seller and
@@ -195,6 +198,7 @@ function Home() {
           heading="Promotion Agreement"
           photoPosition="left"
           image={field}
+          alt="Two fences that have a gap inbetween that leads to a field surrounded by trees and with mountains in the distance"
         >
           <>
             <p className="pb-4">
@@ -223,6 +227,7 @@ function Home() {
           heading="Property Sales Advice"
           photoPosition="right"
           image={estateagents}
+          alt="A set of keys, with a house keyring attached to them"
         >
           <>
             <p className="pb-4">
@@ -250,6 +255,7 @@ function Home() {
           heading="Property Development Finance and Insurance"
           photoPosition="left"
           image={graphs}
+          alt="A laptop with a selection of different charts presented, no stats or data is visible to read"
         >
           <>
             <p className="pb-4">
