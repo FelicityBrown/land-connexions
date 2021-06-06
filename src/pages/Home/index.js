@@ -16,7 +16,6 @@ import { Footer } from "../../components/Footer";
 import housesSunset from "../../assets/housessunset.jpg";
 import planning from "../../assets/planning.jpg";
 import paperwork from "../../assets/paperwork.jpg";
-import barn from "../../assets/barn.jpg";
 import builder from "../../assets/builder.jpg";
 import estateagents from "../../assets/estateagents.jpg";
 import field from "../../assets/field.jpg";
@@ -26,6 +25,7 @@ import gardenpoundsign from "../../assets/gardenpoundsign.jpg";
 import officebuilding from "../../assets/officebuilding.jpg";
 import barnconversion from "../../assets/barnconversion.jpg";
 import planningwork from "../../assets/planningwork.jpg";
+import graphs from "../../assets/graphs.jpg";
 
 function Home() {
   return (
@@ -34,7 +34,6 @@ function Home() {
       <div className="p-8 md:mx-12 md:mt-4 text-blue-300 items-center flex flex-col text-left text-lg">
         <div className="max-w-screen-xl md:pl-72 md:pr-8 px-2">
           <div>
-            {/* <h2 className="uppercase pb-4 text-lg">About Us</h2> */}
             <p className="pb-4">
               Land Connexions is an independent business with over 40 years’
               experience in the Property and Finance sectors.
@@ -45,7 +44,18 @@ function Home() {
               including strategic sites, commercial or agricultural building
               conversions, and private housing.
             </p>
-
+            <p className="pb-4">
+              If you own land or property that may be suitable for future
+              residential development, regardless of its current use, condition
+              or status, we may be able to help you maximise the value of your
+              land. We are constantly looking for sites or properties with or
+              without Planning Permission on either greenfield, brownfield or
+              more urban sites. They can be any size, but typically capable of
+              accommodating at least two units. So, whether you own a large
+              garden, an agricultural building, an office or industrial
+              building, or run a business from premises, we would like to hear
+              from you.
+            </p>
             <p className="pb-4">
               Our objective is to deliver an unrivalled land and property
               related service where our clients’ needs and wants are our main
@@ -71,7 +81,7 @@ function Home() {
             </li>
             <li className="mb-2">
               <a href="#optionsPromotionAgreement">
-                Options & Promotion Agreements
+                Option & Promotion Agreements
               </a>
             </li>
             <li className="mb-2">
@@ -134,8 +144,8 @@ function Home() {
           </p>
         </InfoCard>
         <InfoCard
-          id="optionsPromotionAgreement"
-          heading="Options and Promotion Agreements"
+          id="optionPromotionAgreement"
+          heading="Option and Promotion Agreements"
           photoPosition="left"
           image={paperwork}
         >
@@ -184,7 +194,7 @@ function Home() {
         <InfoCard
           heading="Promotion Agreement"
           photoPosition="left"
-          image={barn}
+          image={field}
         >
           <>
             <p className="pb-4">
@@ -239,7 +249,7 @@ function Home() {
           id="propertyDevelopmentFinanceInsurance"
           heading="Property Development Finance and Insurance"
           photoPosition="left"
-          image={field}
+          image={graphs}
         >
           <>
             <p className="pb-4">
