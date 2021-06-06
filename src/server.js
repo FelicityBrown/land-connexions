@@ -21,19 +21,19 @@ function getParamsFromUrl(url) {
 async function sendEmail(subject, from, plainText, htmlText) {
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
-    host: "mail.epixstudios.co.uk",
-    port: 587,
+    host: process.env.SMTP_HOST,
+    port: parseInt(process.env.SMTP_PORT, 10),
     secure: false, // true for 465, false for other ports
     auth: {
-      user: "felicity@greenliving.earth", // generated ethereal user
-      pass: "6T9jJMbW2G1Amd8k3rhU", // generated ethereal password
+      user: process.env.SMTP_USERNAME, // generated ethereal user
+      pass: process.env.SMTP_PASSWORD, // generated ethereal password
     },
   });
 
   // send mail with defined transport object
   let info = await transporter.sendMail({
     from: from, // sender address
-    to: "john@landconnexions.co.uk",
+    to: process.env.EMAIL_RECIPIENT,
     subject: subject, // Subject line
     text: plainText, // plain text body
     html: htmlText, // html body

@@ -6,3 +6,9 @@ services:
     build: .
     ports:
       - '8000:80'
+    environment:
+      SMTP_HOST: mail.epixstudios.co.uk
+      SMTP_PORT: 587
+      SMTP_USERNAME: enquiries@landconnexions.co.uk
+      SMTP_PASSWORD: CHANGE_ME
+      EMAIL_RECIPIENT: john@landconnexions.co.uk
