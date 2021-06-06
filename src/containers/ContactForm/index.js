@@ -67,12 +67,6 @@ function ContactForm() {
           />
         </div>
       </form>
-      {/* <Button
-        label="Sumbit"
-        onClick={() => alert("clicked")}
-        className="mb-6 md:mb-8"
-        size="large"
-      /> */}
       <div className="text-blue-300 font-semibold border-t-2 border-grey-50">
         <p className="mt-6 mb:mt-8 pb-4">Alternatively you can contact: </p>
         <p className="pb-2">John Moore</p>
