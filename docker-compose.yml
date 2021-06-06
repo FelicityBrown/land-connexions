@@ -12,3 +12,4 @@ services:
       SMTP_USERNAME: enquiries@landconnexions.co.uk
       SMTP_PASSWORD: CHANGE_ME
       EMAIL_RECIPIENT: john@landconnexions.co.uk
+      EMAIL_FROM: notifications@epixstudios.co.uk

@@ -32,7 +32,8 @@ async function sendEmail(subject, from, plainText, htmlText) {
 
   // send mail with defined transport object
   let info = await transporter.sendMail({
-    from: from, // sender address
+    from: process.env.EMAIL_FROM, // sender address
+    replyTo: from,
     to: process.env.EMAIL_RECIPIENT,
     subject: subject, // Subject line
     text: plainText, // plain text body
